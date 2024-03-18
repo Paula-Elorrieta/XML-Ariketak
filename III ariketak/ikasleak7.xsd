@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Murrizketak aldagaiak bezala definutu behin baino batean erabiltzeko -->
+    <xs:simpleType name="nanMurrik">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="telefonoMurrik">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="9"></xs:totalDigits>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="herriaMurrik">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="helbideDatua">
+        <xs:sequence>
+            <xs:element name="kalea">
+                <!-- Murrizketa 100 karaktere izan behar ditu gehienez-->
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="100"></xs:maxLength>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="zbk">
+                <!-- Murrizketak zenbakia 1 izan behar du eta gehienez 1.000, biak barne -->
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="1"></xs:minInclusive>
+                        <xs:maxInclusive value="1000"></xs:maxInclusive>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <!-- Gero aldagaiak deitu type barruan -->
+            <xs:element name="herria" type="herriaMurrik"></xs:element>
+            <xs:element name="probintzia" type="herriaMurrik"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ikasleak">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ikaslea" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="izena" type="xs:string"></xs:element>
+                            <xs:element name="helbidea" type="helbideDatua"></xs:element>
+                            <xs:choice>
+                                <xs:element name="telefonoa" type="telefonoMurrik"></xs:element>
+                                <xs:element name="mugikorra" maxOccurs="3" type="telefonoMurrik"></xs:element>
+                            </xs:choice>
+                            <xs:element name="eposta" type="xs:string"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="nan" use="required" type="nanMurrik"></xs:attribute>
+                        <xs:attribute name="errepikatzailea" default="false" type="xs:boolean"></xs:attribute>
+                        <xs:attribute name="jaoitzeData" type="xs:date" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

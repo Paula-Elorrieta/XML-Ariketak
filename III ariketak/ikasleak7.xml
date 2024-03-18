@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ikasleak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ikasleak7.xsd">
+    <ikaslea nan="23474349B" errepikatzailea="false" jaoitzeData="2001-07-28">
+        <izena>Iraide Etxeberria</izena>
+        <helbidea>
+            <kalea>Kale nagusia</kalea>
+            <zbk>5</zbk>
+            <herria>Bilbao</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <telefonoa>94400000</telefonoa>
+        <eposta>iraide@gmail.com</eposta>
+    </ikaslea>
+    <ikaslea nan="23476459A" errepikatzailea="false" jaoitzeData="2002-11-13">
+        <izena>Joseba Mikel Zarraga</izena>
+        <helbidea>
+            <kalea>Gorbeia</kalea>
+            <zbk>75</zbk>
+            <herria>Artea</herria>
+            <probintzia>Bizkaia</probintzia>
+        </helbidea>
+        <mugikorra>944999999</mugikorra>
+        <mugikorra>564654243</mugikorra>
+        <mugikorra>564634243</mugikorra>
+        <eposta>joseba@gmail.com</eposta>
+    </ikaslea>
+</ikasleak>
