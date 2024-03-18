@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE xml>
+<fakturak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <faktura zenbakia="123">
+        <bezeroa>
+            <izena>Txantrea Liburutegia</izena>
+            <cif>33111222A</cif>
+            <telefonoa>333999444</telefonoa>
+        </bezeroa>
+        <xehetasunak>
+            <artikulua mota="Liburua">AW7</artikulua>
+            <kantitatea>1</kantitatea>
+            <prezioa>21€</prezioa>
+        </xehetasunak>
+    </faktura>
+</fakturak>

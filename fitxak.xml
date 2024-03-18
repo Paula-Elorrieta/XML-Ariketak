@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fitxak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="fitxak.xsd">
+	<fitxa zbk="1">
+		<izena>Ane Zalbidegoitia</izena>
+		<adina>22</adina>
+	</fitxa>
+	<fitxa zbk="2">
+		<izena>Iker Arrien</izena>
+		<adina>23</adina>
+	</fitxa>
+</fitxak>
+

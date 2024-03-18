@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<gertaerak>
+    <gertaera deskribapena="IBMk PCa ezagutarazten du.">
+        <data>
+            <eguna>12</eguna>
+            <hilea>8</hilea>
+            <urtea>1981</urtea>
+        </data>
+    </gertaera>
+    <gertaera deskribapena="Googleren sorrera">
+        <data>
+            <eguna>4</eguna>
+            <hilea>9</hilea>
+            <urtea>1998</urtea>
+        </data>
+    </gertaera>
+    <gertaera deskribapena="Facebooken sorrera">
+        <data>
+            <eguna>4</eguna>
+            <hilea>2</hilea>
+            <urtea>2004</urtea>
+        </data>
+    </gertaera>
+</gertaerak>

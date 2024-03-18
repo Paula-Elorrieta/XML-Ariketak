@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<herriak>
+	<herria>
+		<izena>Nueva Delhi</izena>
+		<herrialdea kontinentea="Asia">India</herrialdea>
+	</herria>
+	<herria>
+		<izena>Lisboa</izena>
+		<herrialdea kontinentea="Europa">Portugal</herrialdea>
+	</herria>
+	<herria>
+		<izena>El Cairo</izena>
+		<herrialdea kontinentea="Afrika">Egipto</herrialdea>
+	</herria>
+</herriak>
